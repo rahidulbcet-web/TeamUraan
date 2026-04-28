@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Uraan – Changing Lives, One Step at a Time</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-brand">
+      <!--
+        TO USE YOUR LOGO IN NAVBAR:
+        Replace the .nav-logo-circle div with:
+        <img src="your-logo.png" alt="Team Uraan"
+             style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--green-light);"/>
+      -->
+      <img src="logo.jpg" alt="Team Uraan"
+             style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--green-light);"/>
+             <span class="nav-name">Team Uraan</span>
+    </div>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Support Us</a></li>
+    </ul>
+
+    <!-- Hamburger Button (mobile only) -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"    onclick="closeMobileMenu()">About</a>
+    <a href="#programs" onclick="closeMobileMenu()">Programs</a>
+    <a href="#gallery"  onclick="closeMobileMenu()">Gallery</a>
+    <a href="#contact"  onclick="closeMobileMenu()">Contact</a>
+    <a href="#contact"  onclick="closeMobileMenu()" class="mob-cta">💙 Support Us</a>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+
+      <!-- Left: Text Content -->
+      <div class="hero-text reveal">
+
+        <!-- ✅ ROUND LOGO PLACEHOLDER
+             To add your real logo, replace the <div class="logo-placeholder"> below with:
+             <img src="your-logo.png" alt="Team Uraan Logo"
+                  style="width:100px;height:100px;border-radius:50%;
+                         object-fit:cover;border:4px solid white;
+                         box-shadow:0 8px 32px rgba(46,125,82,.35);"/>
+        -->
+        <div class="hero-logo-wrap">
+          <div class="logo-placeholder"><img src="logo.jpg" alt="Team Uraan Logo"
+                  style="width:100px;height:100px;border-radius:50%;
+                         object-fit:cover;border:4px solid white;
+                         box-shadow:0 8px 32px rgba(46,125,82,.35);"/>
+          </div>
+        </div>
+
+        <div class="hero-badge">Government Registered NGO — Burdwan, India</div>
+
+        <h1 class="hero-title">
+          Team <em>Uraan</em><br/>Rising Together
+          <h4>Serving for 7 years and counting..</h4>
+        </h1>
+
+        <p class="hero-tagline">
+          Changing Lives, One Step at a Time — through education, nutrition,
+          health, and community-driven compassion across West Bengal and beyond.
+        </p>
+        <p class="hero-tagline">
+          টিম উড়ান এটা বর্ধমানের একটি স্বেচ্ছাসেবী সংস্থা এখানে নানানভাবে অসহায় মানুষদের পাশে দাঁড়িয়ে উনাদের সাহায্য করা হয় আশা করছি আপনারা এই সংস্থায় যোগদান করে আমাদের পাশে দাঁড়াবেন
+        </p>
+
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">💙 Support Us</a>
+          <a href="#about"   class="btn-outline">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Right: Visual / Image -->
+      <div class="hero-visual reveal">
+        <!--
+          Replace the placeholder div below with your hero photo:
+          <img src="hero-photo.jpg" alt="Team Uraan community work"
+               style="width:100%;height:100%;object-fit:cover;"/>
+        -->
+        <div class="hero-img-wrap">
+          <div class="hero-img-placeholder">
+            <img src="community.jpg" alt="Team Uraan Community work" 
+            style="width:100%;height:100%;object-fit:cover;"/>
+            
+          </div>
+        </div>
+        <div class="hero-stat-badge">
+          <div class="num">500+</div>
+          <div class="label">Lives<br/>Impacted</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       ABOUT SECTION
+  ══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left: Text -->
+        <div class="about-text reveal">
+          <p class="section-label">Who We Are?</p>
+          <h2 class="section-title">A Community Built on Hope</h2>
+          <div class="divider"></div>
+          <p>
+            Team Uraan is a grassroots NGO based in Burdwan, West Bengal, dedicated to
+            uplifting underprivileged communities through education, healthcare, and
+            sustainable support. We believe every individual deserves dignity,
+            opportunity, and care.
+          </p>
+          <p>
+            Founded by passionate volunteers, our work spans food relief, health camps,
+            and educational programs — making a real, lasting difference in the lives of
+            children and families who need it most.
+          </p>
+          <div class="about-cards">
+            <div class="about-card">
+              <h4>🎯 Our Mission</h4>
+              <p>To empower communities through compassionate, consistent humanitarian action.</p>
+            </div>
+            <div class="about-card">
+              <h4>🔭 Our Vision</h4>
+              <p>A society where no child goes hungry, uneducated, or unheard.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image Placeholder -->
+        <div class="about-visual reveal">
+          <!--
+            Replace the div below with your image:
+            <img src="about-photo.jpg" alt="Team Uraan volunteers"
+                 style="width:100%;height:100%;object-fit:cover;"/>
+          -->
+          <div class="about-visual-inner">
+             <img src="about-photo.jpg" alt="Team Uraan volunteers"
+                 style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       PROGRAMS SECTION
+  ══════════════════════════════════════════ -->
+  <section id="programs">
+    <div class="container">
+
+      <div class="programs-head reveal">
+        <p class="section-label">What We Do?</p>
+        <h2 class="section-title">Our Programs &amp; Initiatives</h2>
+        <div class="divider"></div>
+        <p class="section-sub">
+          Every program we run is designed with love, powered by volunteers,
+          and guided by the needs of the community.
+        </p>
+      </div>
+
+      <div class="programs-grid">
+
+        <div class="prog-card reveal">
+          <div class="prog-icon">📚</div>
+          <h3>Education Support</h3>
+          <p>Free tutoring, books, and school supplies for underprivileged children to help them stay in school and thrive.</p>
+        </div>
+
+        <div class="prog-card reveal">
+          <div class="prog-icon">🍛</div>
+          <h3>Food Distribution</h3>
+          <p>Regular meal drives and ration support ensuring no family in our community goes to bed hungry.</p>
+        </div>
+
+        <div class="prog-card reveal">
+          <div class="prog-icon">🏥</div>
+          <h3>Health Camps</h3>
+          <p>Free medical check-ups, medicines, and health awareness camps bringing quality care to doorsteps.</p>
+        </div>
+
+        <div class="prog-card reveal">
+          <div class="prog-icon">🩸</div>
+          <h3>Blood Donation Drives</h3>
+          <p>Organizing life-saving blood donation camps, connecting donors with patients in critical need across hospitals.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       GALLERY SECTION
+  ══════════════════════════════════════════ -->
+  <section id="gallery">
+    <div class="container">
+
+      <div class="reveal">
+        <p class="section-label">Our Impact in Pictures</p>
+        <h2 class="section-title">Moments That Matter</h2>
+        <div class="divider"></div>
+        <p class="section-sub">
+          Every photo tells the story of a life touched, a smile restored, a future brightened.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <!--
+          To add real photos, replace each .gallery-item-inner div with:
+          <img src="photo.jpg" alt="Description"
+               style="width:100%;height:100%;object-fit:cover;"/>
+        -->
+        <div class="gallery-item tall reveal">
+          <div class="gallery-item-inner">
+            <div class="icon"></div>
+             <img src="food.jpg" alt="Description"
+               style="width:100%;height:100%;object-fit:cover;"/>
+          </div>
+          <!-- <div class="gallery-overlay">📸 Food Drive</div> -->
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="gallery-item-inner">
+            <div class="icon"></div>
+             <img src="galary pic 1.jpg" alt="Description"
+               style="width:100%;height:100%;object-fit:cover;"/>
+          </div>
+          <!-- <div class="gallery-overlay">📸 Education</div> -->
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="gallery-item-inner">
+            <div class="icon"></div>
+             <img src="galary pic 2.jpg" alt="Description"
+               style="width:100%;height:100%;object-fit:cover;"/>
+          </div>
+          <!-- <div class="gallery-overlay">📸 Health Camp</div> -->
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="gallery-item-inner">
+            <div class="icon"></div>
+             <img src="galary pic 4.jpg" alt="Description"
+               style="width:100%;height:100%;object-fit:cover;"/>
+          </div>
+          <!-- <div class="gallery-overlay">📸 Blood Donation</div> -->
+        </div>
+
+        <div class="gallery-item tall reveal">
+          <div class="gallery-item-inner">
+            <div class="icon"></div>
+             <img src="galary pic 5.jpg" alt="Description"
+               style="width:100%;height:100%;object-fit:cover;"/>
+          </div>
+          <!-- <div class="gallery-overlay">📸 Community</div> -->
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="gallery-item-inner">
+            <div class="icon"></div>
+            <img src="galary pic 6.jpg" alt="Description"
+               style="width:100%;height:100%;object-fit:cover;"/>
+          </div>
+          <!-- <div class="gallery-overlay">📸 Volunteers</div> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       CALL TO ACTION SECTION
+  ══════════════════════════════════════════ -->
+  <section id="cta">
+    <div class="container" style="position:relative;z-index:1;">
+      <p class="section-label reveal">Make a Difference</p>
+      <h2 class="reveal">Join Us in Changing Lives</h2>
+      <p class="reveal">
+        Together, we can go further. Volunteer your time, spread the word, or support our mission.
+      </p>
+      <div class="cta-btns reveal">
+        <a href="#contact"                  class="btn-white">📞 Contact Us</a>
+        <a href="#contact"                  class="btn-ghost">🤝 Volunteer</a>
+        <a href="mailto:teamuraan@gmail.com" class="btn-ghost">💚 Donate</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       CONTACT SECTION
+  ══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="reveal">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h3>Reach Us Directly</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>087687 48491</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>
+                <a href="mailto:teamuraan@gmail.com" style="color:var(--green);">
+                  teamuraan@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>Burdwan, West Bengal<br/>India – 713101</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form reveal">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Your name"/>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" placeholder="you@email.com"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">How can you help?</label>
+            <select id="fsubject">
+              <option value="">— Select an option —</option>
+              <option>Volunteer</option>
+              <option>Donate</option>
+              <option>Collaborate / Partner</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" placeholder="Tell us how you'd like to help or any questions you have…"></textarea>
+          </div>
+          <button class="btn-form" onclick="handleFormSubmit()">Send Message →</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+        FOOTER
+  ═══════════════-->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo + Company -->
+    <div class="footer-brand">
+      <img src="logo.jpg" alt="Logo" class="logo">
+      <h2>Team Uraan</h2>
+      <p>Changing Lives, One Step at a Time</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>📞 087687 48491</p>
+      <p>✉️ teamuraan@gmail.com</p>
+      <p>📍 Bardhaman,West Bengal</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="footer-bottom">
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+  
+      <a href="#"><img src="youtube.png" alt=""></a>
+      <a href="#"><img src="facebook.png" alt=""></a>
+      <a href="#"><img src="instagram.png" alt=""></a>
+    </div>
+
+    <!-- Copyright -->
+    <p>© 2026 Team Uraan | All Rights Reserved</p>
+  </div>
+</footer>
+
+
+
+  <script>
+    /* ── Hamburger / Mobile Menu ── */
+    const btn  = document.getElementById('hamburgerBtn');
+    const menu = document.getElementById('mobileMenu');
+
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('open');
+      menu.classList.toggle('open');
+    });
+
+    function closeMobileMenu() {
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+    }
+
+    /* Close drawer when clicking outside */
+    document.addEventListener('click', (e) => {
+      if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    /* ── Scroll Reveal Animation ── */
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); }
+      }),
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = (i % 4) * 0.08 + 's';
+      observer.observe(el);
+    });
+
+    /* ── Contact Form Handler ── */
+    function handleFormSubmit() {
+      const name  = document.getElementById('fname').value.trim();
+      const email = document.getElementById('femail').value.trim();
+      if (!name || !email) {
+        alert('Please fill in your name and email before sending.');
+        return;
+      }
+      alert('Thank you, ' + name + '! 💚\nTeam Uraan will get back to you soon at ' + email + '.');
+    }
+  </script>
+
+
+
+
+</body>
+</html>
