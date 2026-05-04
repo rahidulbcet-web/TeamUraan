@@ -2,20 +2,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --green:       #2E7D52;
-  --green-light: #4CAF7D;
-  --green-pale:  #EAF4EE;
-  --blue:        #1A5276;
-  --blue-light:  #2980B9;
-  --blue-pale:   #EBF5FB;
-  --cream:       #FAFDF8;
-  --text-dark:   #1C2B22;
-  --text-mid:    #3D5A47;
-  --text-soft:   #7A9B85;
-  --white:       #FFFFFF;
-  --radius:      14px;
-  --shadow:      0 6px 32px rgba(46,125,82,.12);
-  --shadow-hover:0 14px 48px rgba(46,125,82,.22);
+ --green:       #1A5276;   /* was dark green, now deep blue */
+  --green-light: #2980B9;   /* was light green, now medium blue */
+  --green-pale:  #EBF5FB;   /* was green tint, now light blue tint */
+  --blue:        #154360;   /* darker blue for accents */
+  --blue-light:  #5DADE2;   /* bright blue highlight */
+  --blue-pale:   #D6EAF8;   /* very light blue background */
+  --cream:       #F5F8FF;   /* slightly blue-white instead of green-white */
+  --text-dark:   #1C2733;   /* dark navy instead of dark green */
+  --text-mid:    #2E4057;   /* mid blue-grey instead of mid green */
+  --text-soft:   #7F8C9A; 
 }
 
 html { scroll-behavior: smooth; }
