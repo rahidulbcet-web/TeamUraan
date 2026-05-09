@@ -212,7 +212,7 @@ section { margin-bottom: 64px; }
 }
 
 .amount-btn .amt {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Arial', serif;
   font-size: 1.9rem; font-weight: 700;
   color: var(--blue-dark);
   display: block; line-height: 1;
