@@ -383,15 +383,19 @@
         upi:     `upi://pay?${base}`
       };
 
-      window.location.href = links[app] || links.upi;
+      const a = document.createElement('a');
+      a.href = links[app] || links.upi;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
 
       // Fallback if app is not installed
-      setTimeout(() => {
-        const name = { gpay:'Google Pay', phonepe:'PhonePe', paytm:'Paytm', upi:'UPI App' }[app];
-        if (confirm(`Could not open ${name}.\nTry with generic UPI link?`)) {
-          window.location.href = `upi://pay?${base}`;
-        }
-      }, 2500);
+      // setTimeout(() => {
+      //   const name = { gpay:'Google Pay', phonepe:'PhonePe', paytm:'Paytm', upi:'UPI App' }[app];
+      //   if (confirm(`Could not open ${name}.\nTry with generic UPI link?`)) {
+      //     window.location.href = `upi://pay?${base}`;
+      //   }
+      // }, 2500);
     }
 
 
