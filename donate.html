@@ -377,12 +377,11 @@
       const base = `pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(UPI_NAME)}&am=${selectedAmount}&cu=INR&tn=${encodeURIComponent(note)}`;
 
       const links = {
-        gpay:    `tez://upi/pay?${base}`,
-        phonepe: `phonepe://pay?${base}`,
-        paytm:   `paytmmp://pay?${base}`,
-        upi:     `upi://pay?${base}`
-      };
-
+  gpay:    `upi://pay?${base}`,
+  phonepe: `upi://pay?${base}`,
+  paytm:   `upi://pay?${base}`,
+  upi:     `upi://pay?${base}`
+};
       const a = document.createElement('a');
       a.href = links[app] || links.upi;
       document.body.appendChild(a);
