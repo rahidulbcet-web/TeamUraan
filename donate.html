@@ -14,7 +14,6 @@
   ══════════════════════════════════════════ -->
   <nav>
     <div class="nav-brand">
-      <!-- Replace logo.jpg with your actual logo filename -->
       <img src="logo.png" alt="Team Uraan" onerror="this.style.display='none'"/>
       <span class="nav-name">Team Uraan</span>
     </div>
@@ -45,7 +44,7 @@
   <main>
 
     <!-- ══════════════════════════════════════════
-         SECTION 1 — QUICK DONATE (UPI)
+         SECTION 1 — UPI COMING SOON
     ══════════════════════════════════════════ -->
     <section id="quick-donate">
 
@@ -53,64 +52,35 @@
         <p class="section-label">Instant Payment</p>
         <h2 class="section-title">Quick Donate via UPI</h2>
         <div class="divider"></div>
-        <div class="quick-donate-intro">
-          <p>Select an amount and tap your preferred payment app.
-             The amount is pre-filled automatically — just confirm and pay.</p>
+      </div>
+
+      <!-- Coming Soon Blur Box -->
+      <div class="coming-soon-wrap reveal">
+
+        <!-- Blurred background content (purely decorative) -->
+        <div class="coming-soon-blur">
+          <div class="blur-amount-grid">
+            <div class="blur-amt-btn"><span>₹50</span><small>School supplies</small></div>
+            <div class="blur-amt-btn"><span>₹100</span><small>A child's meal</small></div>
+            <div class="blur-amt-btn featured"><span>₹200</span><small>⭐ Most popular</small></div>
+            <div class="blur-amt-btn"><span>₹500</span><small>Health camp slot</small></div>
+          </div>
+          <div class="blur-upi-row">
+            <div class="blur-upi-btn gpay">Google Pay</div>
+            <div class="blur-upi-btn phonepe">PhonePe</div>
+            <div class="blur-upi-btn paytm">Paytm</div>
+            <div class="blur-upi-btn upi">💸 Any UPI App</div>
+          </div>
         </div>
-      </div>
 
-      <!-- Amount buttons -->
-      <div class="amount-grid reveal">
-        <a class="amount-btn" onclick="selectAmount(this, 50)">
-          <span class="amt">₹50</span>
-          <span class="amt-sub">School supplies</span>
-        </a>
-        <a class="amount-btn" onclick="selectAmount(this, 100)">
-          <span class="amt">₹100</span>
-          <span class="amt-sub">A child's meal</span>
-        </a>
-        <a class="amount-btn featured" onclick="selectAmount(this, 200)">
-          <span class="amt">₹200</span>
-          <span class="amt-sub">⭐ Most popular</span>
-        </a>
-        <a class="amount-btn" onclick="selectAmount(this, 500)">
-          <span class="amt">₹500</span>
-          <span class="amt-sub">Health camp slot</span>
-        </a>
-      </div>
+        <!-- Coming Soon Overlay -->
+        <div class="coming-soon-overlay">
+          <div class="coming-soon-badge">🔒</div>
+          <h3>UPI Payment</h3>
+          <p class="cs-main">Coming Soon</p>
+          <span class="cs-sub">Use QR Code or Bank Transfer below in the meantime</span>
+        </div>
 
-      <!-- Custom amount -->
-      <div class="custom-amount-row reveal">
-        <input type="number" id="customAmount" placeholder="Enter custom amount ₹" min="1"/>
-        <button onclick="setCustomAmount()">Set Amount</button>
-      </div>
-
-      <!-- Selected amount label -->
-      <p id="selectedDisplay"></p>
-
-      <!-- UPI App buttons -->
-      <div class="upi-row reveal">
-        <a class="upi-btn upi-btn-gpay" href="#" onclick="openUPI(event,'gpay')">
-          <svg viewBox="0 0 24 24" fill="white"><path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-          Google Pay
-        </a>
-        <a class="upi-btn upi-btn-phonepe" href="#" onclick="openUPI(event,'phonepe')">
-          <svg viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="12"/></svg>
-          PhonePe
-        </a>
-        <a class="upi-btn upi-btn-paytm" href="#" onclick="openUPI(event,'paytm')">
-          <svg viewBox="0 0 24 24" fill="white"><rect width="24" height="24" rx="4"/></svg>
-          Paytm
-        </a>
-        <a class="upi-btn upi-btn-upi" href="#" onclick="openUPI(event,'upi')">
-          💸 Any UPI App
-        </a>
-      </div>
-
-      <div class="upi-note reveal">
-        📌 <strong>Important:</strong> 
-        If you are facing any payment related problem 
-        please contact us.
       </div>
 
     </section>
@@ -123,21 +93,7 @@
 
       <div class="qr-box">
         <img src="qr.png" alt="UPI QR Code"
-               style="width:100%;height:100%;object-fit:contain;border-radius:12px;"/>
-        
-        
-        <svg 
-        width="48" height="48" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="1.5">
-          <rect x="3" y="3" width="7" height="7"/>
-          <rect x="14" y="3" width="7" height="7"/>
-          <rect x="3" y="14" width="7" height="7"/>
-          <rect x="14" y="14" width="3" height="3"/>
-          <rect x="19" y="14" width="2" height="2"/>
-          <rect x="14" y="19" width="2" height="2"/>
-          <rect x="18" y="19" width="3" height="2"/>
-        </svg>
-        <!-- <span>Add your<br/>UPI QR here</span> -->
+             style="width:100%;height:100%;object-fit:contain;border-radius:12px;"/>
       </div>
 
       <div class="qr-info">
@@ -145,8 +101,7 @@
         <p>Open any UPI app — Google Pay, PhonePe, Paytm, or your bank app —
            and scan this QR code to donate directly to Team Uraan.</p>
         <div class="upi-id-display">
-          UPI ID: teamuraan@sbi &nbsp;
-          
+          UPI ID: teamuraan@sbi
         </div>
       </div>
 
@@ -215,15 +170,15 @@
             <div class="value">Savings / NGO Account</div>
           </div>
 
-        </div><!-- /bank-details-grid -->
-      </div><!-- /bank-card -->
+        </div>
+      </div>
 
     </section>
 
 
     <!-- ══════════════════════════════════════════
          SECTION 4 — MONTHLY DONATION TRACKER
-    ══════════════════════════════════════════ -->
+    ══════════════════════════════════════════ 
     <section id="tracker">
 
       <div class="tracker-header-row reveal">
@@ -240,7 +195,7 @@
         </div>
       </div>
 
-      <!-- Summary cards -->
+       Summary cards 
       <div class="tracker-summary reveal">
         <div class="summary-card">
           <span class="s-num" id="totalAmount">₹0</span>
@@ -256,8 +211,8 @@
         </div>
       </div>
 
-      <!-- Donation table -->
-      <!-- <div class="tracker-table-wrap reveal">
+       Donation table 
+      <div class="tracker-table-wrap reveal">
         <table id="donationTable">
           <thead>
             <tr>
@@ -269,10 +224,9 @@
             </tr>
           </thead>
           <tbody id="tableBody">
-            Rows rendered by JavaScript -->
-          <!-- </tbody>
+             Rows rendered by JavaScript 
+          </tbody>
         </table>
-        <-- Shown only in edit mode 
         <button class="add-row-btn" id="addRowBtn" onclick="addRow()" style="display:none;">
           + Add Member
         </button>
@@ -280,9 +234,9 @@
 
       <p class="edit-mode-hint" id="editHint">
         Click <strong>Edit Mode</strong> to update donation records.
-      </p> -->
+      </p>
 
-    </section>
+    </section> -->
 
   </main>
 
@@ -313,9 +267,7 @@
   ══════════════════════════════════════════ -->
   <script>
 
-    /* ════════════════════════════════════════════
-       ⚙️  CONFIG — Edit these two values
-       ════════════════════════════════════════════ */
+ 
     const UPI_ID   = '9476325086@ptsbi';  // ← Replace with your real UPI ID
     const UPI_NAME = 'Team Uraan';
 
@@ -329,74 +281,12 @@
     );
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-
     /* ── Current month badge ────────────────────── */
     const MONTHS = ['January','February','March','April','May','June',
                     'July','August','September','October','November','December'];
-    const NOW    = new Date();
+    const NOW = new Date();
     document.getElementById('currentMonth').textContent =
       MONTHS[NOW.getMonth()] + ' ' + NOW.getFullYear();
-
-
-    /* ════════════════════════════════════════════
-       UPI / QUICK DONATE
-       ════════════════════════════════════════════ */
-    let selectedAmount = 200;
-    updateDisplay();
-
-    function selectAmount(el, amt) {
-      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('selected'));
-      el.classList.add('selected');
-      selectedAmount = amt;
-      document.getElementById('customAmount').value = '';
-      updateDisplay();
-    }
-
-    function setCustomAmount() {
-      const val = parseInt(document.getElementById('customAmount').value);
-      if (!val || val < 1) { alert('Please enter a valid amount.'); return; }
-      selectedAmount = val;
-      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('selected'));
-      updateDisplay();
-    }
-
-    function updateDisplay() {
-      const el = document.getElementById('selectedDisplay');
-      el.textContent = selectedAmount
-        ? '✅ Selected: ₹' + selectedAmount + ' — choose your payment app below'
-        : '';
-    }
-
-    function openUPI(e, app) {
-      e.preventDefault();
-      if (!selectedAmount) {
-        alert('Please select a donation amount first.');
-        return;
-      }
-      const note = 'Donation to Team Uraan';
-      const base = `pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(UPI_NAME)}&am=${selectedAmount}&cu=INR&tn=${encodeURIComponent(note)}`;
-
-      const links = {
-  gpay:    `upi://pay?${base}`,
-  phonepe: `upi://pay?${base}`,
-  paytm:   `upi://pay?${base}`,
-  upi:     `upi://pay?${base}`
-};
-      const a = document.createElement('a');
-      a.href = links[app] || links.upi;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-
-      // Fallback if app is not installed
-      // setTimeout(() => {
-      //   const name = { gpay:'Google Pay', phonepe:'PhonePe', paytm:'Paytm', upi:'UPI App' }[app];
-      //   if (confirm(`Could not open ${name}.\nTry with generic UPI link?`)) {
-      //     window.location.href = `upi://pay?${base}`;
-      //   }
-      // }, 2500);
-    }
-
 
     /* ── Copy to clipboard ──────────────────────── */
     function copyText(text, btn) {
@@ -410,21 +300,12 @@
       });
     }
 
-
     /* ════════════════════════════════════════════
        DONATION TRACKER
-
-       HOW TO UPDATE MONTHLY DATA:
-       1. Click "Edit Mode" button on the page
-       2. Edit names, amounts, dates, status
-       3. Click "Save & Exit" when done
-
-       To permanently update the default data,
-       edit the donationData array below.
+       ✏️ UPDATE donationData array each month
        ════════════════════════════════════════════ */
     let editMode = false;
 
-    // ✏️ UPDATE THIS ARRAY each month with member data
     let donationData = [
       { name: 'Rahul Das',        amount: 200, date: '2026-05-01', status: 'Paid'    },
       { name: 'Priya Mondal',     amount: 200, date: '2026-05-02', status: 'Paid'    },
@@ -439,36 +320,33 @@
     function renderTable() {
       const tbody = document.getElementById('tableBody');
       tbody.innerHTML = '';
-
       donationData.forEach((row, i) => {
         const tr = document.createElement('tr');
-
         if (editMode) {
           tr.innerHTML = `
             <td>${i + 1}</td>
             <td class="editable-cell">
-              <input value="${row.name}"
-                     onchange="donationData[${i}].name = this.value"/>
+              <input value="${row.name}" onchange="donationData[${i}].name=this.value"/>
             </td>
             <td class="editable-cell">
               <input type="number" value="${row.amount}"
-                     onchange="donationData[${i}].amount = parseInt(this.value)||0; updateSummary()"/>
+                     onchange="donationData[${i}].amount=parseInt(this.value)||0;updateSummary()"/>
             </td>
             <td class="editable-cell">
               <input type="date" value="${row.date}"
-                     onchange="donationData[${i}].date = this.value"/>
+                     onchange="donationData[${i}].date=this.value"/>
             </td>
             <td class="editable-cell">
-              <select onchange="donationData[${i}].status = this.value; updateSummary()">
-                <option ${row.status === 'Paid'    ? 'selected' : ''}>Paid</option>
-                <option ${row.status === 'Pending' ? 'selected' : ''}>Pending</option>
+              <select onchange="donationData[${i}].status=this.value;updateSummary()">
+                <option ${row.status==='Paid'?'selected':''}>Paid</option>
+                <option ${row.status==='Pending'?'selected':''}>Pending</option>
               </select>
             </td>
             <td>
               <button class="delete-row-btn" onclick="deleteRow(${i})">✕ Remove</button>
             </td>`;
         } else {
-          const initials = row.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+          const initials = row.name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
           tr.innerHTML = `
             <td>${i + 1}</td>
             <td><div class="name-cell">
@@ -476,16 +354,15 @@
             </div></td>
             <td class="amount-cell">₹${row.amount.toLocaleString('en-IN')}</td>
             <td>${formatDate(row.date)}</td>
-            <td><span class="status-badge ${row.status === 'Paid' ? 'status-paid' : 'status-pending'}">${row.status}</span></td>`;
+            <td><span class="status-badge ${row.status==='Paid'?'status-paid':'status-pending'}">${row.status}</span></td>`;
         }
-
         tbody.appendChild(tr);
       });
     }
 
     function formatDate(d) {
       if (!d) return '—';
-      return new Date(d).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+      return new Date(d).toLocaleDateString('en-IN', { day:'numeric', month:'short', year:'numeric' });
     }
 
     function updateSummary() {
@@ -502,24 +379,20 @@
       const btn    = document.getElementById('editToggle');
       const addBtn = document.getElementById('addRowBtn');
       const hint   = document.getElementById('editHint');
-
       btn.textContent = editMode ? '💾 Save & Exit' : '✏️ Edit Mode';
       btn.classList.toggle('active', editMode);
       addBtn.style.display = editMode ? 'block' : 'none';
       hint.innerHTML = editMode
-        ? '🟢 Edit mode ON — change names, amounts, dates and status freely. Click <strong>Save & Exit</strong> when done.'
+        ? '🟢 Edit mode ON — update freely. Click <strong>Save & Exit</strong> when done.'
         : 'Click <strong>Edit Mode</strong> to update donation records.';
-
       renderTable();
       updateSummary();
     }
 
     function addRow() {
       donationData.push({
-        name:   'New Member',
-        amount: 200,
-        date:   new Date().toISOString().split('T')[0],
-        status: 'Pending'
+        name: 'New Member', amount: 200,
+        date: new Date().toISOString().split('T')[0], status: 'Pending'
       });
       renderTable();
       updateSummary();
