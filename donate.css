@@ -212,7 +212,7 @@ section { margin-bottom: 64px; }
 }
 
 .amount-btn .amt {
-  font-family: 'Arial', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.9rem; font-weight: 700;
   color: var(--blue-dark);
   display: block; line-height: 1;
@@ -295,6 +295,70 @@ section { margin-bottom: 64px; }
 .upi-btn-phonepe { background: #5f259f; color: white; box-shadow: 0 4px 14px rgba(95,37,159,.35); }
 .upi-btn-paytm   { background: #00B9F1; color: white; box-shadow: 0 4px 14px rgba(0,185,241,.3); }
 .upi-btn-upi     { background: var(--blue-dark); color: white; box-shadow: 0 4px 14px rgba(26,82,118,.35); }
+
+/* UPI Manual Box */
+.upi-manual-box {
+  background: white;
+  border: 2px solid var(--blue-pale);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 16px;
+  box-shadow: 0 3px 16px rgba(26,82,118,.08);
+}
+
+.upi-manual-top {
+  display: flex; gap: 16px; align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.upi-manual-icon {
+  font-size: 2rem; line-height: 1;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+.upi-manual-top h4 {
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--text-dark); margin-bottom: 5px;
+}
+
+.upi-manual-top p {
+  font-size: .87rem; color: var(--text-mid); line-height: 1.5;
+}
+
+.upi-id-copy-row {
+  display: flex; align-items: center;
+  gap: 12px; flex-wrap: wrap;
+  background: var(--blue-xpale);
+  border: 1.5px solid rgba(26,82,118,.15);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+}
+
+#upiIdText {
+  font-size: 1.05rem; font-weight: 700;
+  color: var(--blue-dark); letter-spacing: .4px;
+  flex: 1;
+}
+
+.upi-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.upi-step {
+  display: flex; align-items: center; gap: 10px;
+  font-size: .83rem; color: var(--text-mid);
+}
+
+.upi-step span {
+  width: 26px; height: 26px; flex-shrink: 0;
+  background: var(--blue-dark); color: white;
+  border-radius: 50%; font-size: .75rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+
 
 /* UPI note */
 .upi-note {
@@ -578,6 +642,7 @@ tbody td:first-child { font-weight: 600; color: var(--text-soft); }
    RESPONSIVE
    ════════════════════════════════════════════════ */
 @media (max-width: 768px) {
+  .upi-steps     { grid-template-columns: 1fr; }
   .amount-grid       { grid-template-columns: repeat(2, 1fr); }
   .bank-details-grid { grid-template-columns: 1fr; }
   .bank-detail-item  { border-right: none !important; }
@@ -597,4 +662,123 @@ tbody td:first-child { font-weight: 600; color: var(--text-soft); }
   .bank-detail-item  { padding: 18px 20px; }
   .upi-btn           { padding: 10px 16px; font-size: .8rem; }
   .qr-box            { width: 130px; height: 130px; }
+}
+
+
+/* ════════════════════════════════════════════════
+   COMING SOON — UPI BLUR SECTION
+   ════════════════════════════════════════════════ */
+
+.coming-soon-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+/* ── Blurred background (fake UI beneath) ─────── */
+.coming-soon-blur {
+  background: white;
+  padding: 28px;
+  filter: blur(5px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.blur-amount-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px; margin-bottom: 20px;
+}
+
+.blur-amt-btn {
+  background: var(--blue-xpale);
+  border: 2px solid var(--blue-pale);
+  border-radius: 14px;
+  padding: 20px 12px;
+  text-align: center;
+}
+
+.blur-amt-btn span {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem; font-weight: 700;
+  color: var(--blue-dark); display: block;
+}
+
+.blur-amt-btn small {
+  font-size: .72rem; color: var(--text-soft);
+  margin-top: 4px; display: block;
+}
+
+.blur-amt-btn.featured {
+  background: var(--blue-dark);
+}
+
+.blur-amt-btn.featured span,
+.blur-amt-btn.featured small { color: white; }
+
+.blur-upi-row {
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+
+.blur-upi-btn {
+  padding: 11px 20px; border-radius: 40px;
+  font-size: .85rem; font-weight: 600; color: white;
+}
+
+.blur-upi-btn.gpay    { background: #4285F4; }
+.blur-upi-btn.phonepe { background: #5f259f; }
+.blur-upi-btn.paytm   { background: #00B9F1; }
+.blur-upi-btn.upi     { background: var(--blue-dark); }
+
+
+/* ── Coming Soon Overlay (sits on top of blur) ── */
+.coming-soon-overlay {
+  position: absolute; inset: 0;
+  background: rgba(20, 40, 80, 0.55);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  gap: 6px;
+}
+
+.coming-soon-badge {
+  font-size: 2.8rem;
+  margin-bottom: 6px;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.3));
+}
+
+.coming-soon-overlay h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem; font-weight: 600;
+  color: rgba(255,255,255,.75);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.coming-soon-overlay .cs-main {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.6rem; font-weight: 700;
+  color: white; line-height: 1;
+  text-shadow: 0 2px 16px rgba(0,0,0,.4);
+}
+
+.coming-soon-overlay .cs-sub {
+  font-size: .8rem;
+  color: rgba(255,255,255,.65);
+  margin-top: 4px;
+  max-width: 280px; line-height: 1.5;
+}
+
+
+/* ── Responsive ───────────────────────────────── */
+@media (max-width: 600px) {
+  .blur-amount-grid { grid-template-columns: repeat(2, 1fr); }
+  .coming-soon-overlay .cs-main { font-size: 2rem; }
+  .coming-soon-badge { font-size: 2.2rem; }
 }
